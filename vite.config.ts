@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
       '@': resolve(__dirname, 'src'),
     },
   },
-  base: mode === 'gh' ? '/quantum-paper-website/' : '/',
+  base: process.env.VERCEL ? '/' : (mode === 'gh' ? '/quantum-paper-website/' : '/'),
   build: {
     outDir: 'dist',
     sourcemap: true,
