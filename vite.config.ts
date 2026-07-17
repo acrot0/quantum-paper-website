@@ -10,7 +10,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
-  base: process.env.GITHUB_ACTIONS ? '/quantum-paper-website/' : '/',
+  base: './',
   build: {
     outDir: 'dist',
     sourcemap: true,
