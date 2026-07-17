@@ -3,15 +3,16 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
   },
+  base: mode === 'gh' ? '/quantum-paper-website/' : '/',
   build: {
     outDir: 'dist',
     sourcemap: true,
   },
-})
+}))
