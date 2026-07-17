@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+@import "prismjs/themes/prism-tomorrow.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark body {
+  background: #0f172a;
+  color: #f1f5f9;
+}

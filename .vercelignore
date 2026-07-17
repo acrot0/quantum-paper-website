@@ -1,0 +1,10 @@
+node_modules
+.git
+coverage
+*.log
+.DS_Store
+.vscode
+.idea
+test
+*.md
+!README.md
