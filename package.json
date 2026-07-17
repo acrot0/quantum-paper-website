@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:gh": "tsc -b && vite build --base /quantum-paper-website/",
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest",
